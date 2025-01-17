@@ -1,0 +1,107 @@
+/* General styling */
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent scrolling */
+  font-family: Arial, sans-serif;
+  background: black; /* Ensure a clean black background */
+}
+
+/* Canvas styling */
+canvas {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Settings menu styling (dark-mode) */
+#settingsMenu {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(20, 20, 20, 0.95); /* Dark gray with slight transparency */
+  padding: 15px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8); /* Deeper shadow for dark mode */
+  text-align: center; /* Center-align menu items */
+  z-index: 10; /* Ensure it appears above the canvas */
+  font-size: 14px;
+  color: white; /* White text for readability */
+  width: 180px; /* Fix the menu width to make it compact */
+}
+
+/* Menu header */
+#settingsMenu h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: white; /* White header text */
+}
+
+/* Sliders */
+input[type="range"] {
+  appearance: none;
+  width: 80%; /* Adjust slider width to fit within the menu */
+  height: 8px; /* Height of slider track */
+  background: #333; /* Dark gray slider track */
+  border-radius: 5px; /* Rounded track */
+  outline: none; /* Remove default focus outline */
+  margin: 10px 0; /* Add spacing between sliders */
+  display: block;
+  margin-left: auto;
+  margin-right: auto; /* Center-align sliders */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 16px; /* Thumb width */
+  height: 16px; /* Thumb height */
+  border-radius: 50%; /* Round thumb */
+  cursor: pointer; /* Pointer on hover */
+}
+
+#redSlider::-webkit-slider-thumb {
+  background: rgba(255, 150, 150, 1); /* Match the red particle glow */
+}
+
+#orangeSlider::-webkit-slider-thumb {
+  background: rgb(255, 152, 57); /* Match the orange particle glow */
+}
+
+
+#yellowSlider::-webkit-slider-thumb {
+  background: rgba(255, 255, 0, 1); /* Match the yellow particle color */
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background: #444; /* Darker track for better contrast */
+  border-radius: 5px;
+}
+
+/* Buttons (dark-mode) */
+#menuButtons {
+  margin-top: 15px; /* Add spacing above buttons */
+  display: flex; /* Use flexbox for side-by-side layout */
+  justify-content: space-between; /* Space buttons evenly */
+  gap: 10px; /* Add spacing between buttons */
+}
+
+button {
+  display: inline-block;
+  padding: 8px 12px;
+  font-size: 14px;
+  color: white;
+  background-color: #444; /* Dark gray button */
+  border: none;
+  border-radius: 10px; /* Rounded corners */
+  cursor: pointer; /* Pointer on hover */
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+  transition: background-color 0.3s ease;
+  flex: 1; /* Ensure buttons take up equal width */
+  text-align: center; /* Center the text */
+}
+
+button:hover {
+  background-color: #666; /* Lighter gray on hover */
+}
