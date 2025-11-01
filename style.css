@@ -1,0 +1,172 @@
+/* General styling */
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent scrolling */
+  font-family: Arial, sans-serif;
+  background: black; /* Ensure a clean black background */
+}
+
+/* Canvas styling */
+canvas {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Settings menu styling (dark-mode) */
+#settingsMenu {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(20, 20, 20, 0.95); /* Dark gray with slight transparency */
+  padding: 15px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8); /* Deeper shadow for dark mode */
+  text-align: center; /* Center-align menu items */
+  z-index: 10; /* Ensure it appears above the canvas */
+  font-size: 14px;
+  color: white; /* White text for readability */
+  width: 180px; /* Fix the menu width to make it compact */
+}
+
+/* Top bar container */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Total particle counter */
+#totalParticles {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Bottom bar container */
+.bottom-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Collision counter */
+#collisionCounter {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* FPS display */
+#fpsDisplay {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: right;
+}
+
+/* Timer display */
+#timerDisplay {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: right;
+}
+
+/* Slider container */
+.slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+  gap: 10px;
+}
+
+/* Sliders */
+input[type="range"] {
+  appearance: none;
+  flex: 1; /* Take up remaining space */
+  height: 8px; /* Height of slider track */
+  background: #333; /* Dark gray slider track */
+  border-radius: 5px; /* Rounded track */
+  outline: none; /* Remove default focus outline */
+}
+
+/* Particle counter */
+.particle-counter {
+  color: white;
+  font-size: 14px;
+  min-width: 30px;
+  text-align: right;
+  font-weight: bold;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 16px; /* Thumb width */
+  height: 16px; /* Thumb height */
+  border-radius: 50%; /* Round thumb */
+  cursor: pointer; /* Pointer on hover */
+}
+
+#redSlider::-webkit-slider-thumb {
+  background: rgba(220, 140, 140, 1); /* Match the soft muted red */
+}
+
+#blueSlider::-webkit-slider-thumb {
+  background: rgba(140, 150, 220, 1); /* Match the soft muted blue */
+}
+
+#lavenderSlider::-webkit-slider-thumb {
+  background: rgba(180, 160, 220, 1); /* Match the soft lavender */
+}
+
+#roseSlider::-webkit-slider-thumb {
+  background: rgba(220, 160, 180, 1); /* Match the dusty rose */
+}
+
+#sageSlider::-webkit-slider-thumb {
+  background: rgba(160, 200, 160, 1); /* Match the pale sage green */
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background: #444; /* Darker track for better contrast */
+  border-radius: 5px;
+}
+
+/* Buttons (dark-mode) */
+#menuButtons {
+  margin-top: 15px; /* Add spacing above buttons */
+  display: flex; /* Use flexbox for side-by-side layout */
+  justify-content: space-between; /* Space buttons evenly */
+  gap: 10px; /* Add spacing between buttons */
+}
+
+button {
+  display: inline-block;
+  padding: 8px 12px;
+  font-size: 14px;
+  color: white;
+  background-color: #444; /* Dark gray button */
+  border: none;
+  border-radius: 10px; /* Rounded corners */
+  cursor: pointer; /* Pointer on hover */
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+  transition: background-color 0.3s ease;
+  flex: 1; /* Ensure buttons take up equal width */
+  text-align: center; /* Center the text */
+}
+
+button:hover {
+  background-color: #666; /* Lighter gray on hover */
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Particle Simulation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- Settings Menu -->
+  <div id="settingsMenu">
+    <div id="topBar" class="top-bar">
+      <div id="totalParticles" class="total-counter">Total: 50</div>
+      <div id="timerDisplay" class="timer-display">0:00</div>
+    </div>
+    <div class="slider-container">
+      <input id="redSlider" type="range" min="0" max="500" value="10">
+      <span id="redCounter" class="particle-counter">10</span>
+    </div>
+    <div class="slider-container">
+      <input id="blueSlider" type="range" min="0" max="500" value="10">
+      <span id="blueCounter" class="particle-counter">10</span>
+    </div>
+    <div class="slider-container">
+      <input id="lavenderSlider" type="range" min="0" max="500" value="10">
+      <span id="lavenderCounter" class="particle-counter">10</span>
+    </div>
+    <div class="slider-container">
+      <input id="roseSlider" type="range" min="0" max="500" value="10">
+      <span id="roseCounter" class="particle-counter">10</span>
+    </div>
+    <div class="slider-container">
+      <input id="sageSlider" type="range" min="0" max="500" value="10">
+      <span id="sageCounter" class="particle-counter">10</span>
+    </div>
+    <div id="bottomBar" class="bottom-bar">
+      <div id="collisionCounter" class="collision-counter">Collisions: 0</div>
+      <div id="fpsDisplay" class="fps-display">FPS: 60</div>
+    </div>
+    <div id="menuButtons">
+      <button id="pauseButton">Resume</button>
+      <button id="resetButton">Reset</button>
+    </div>
+  </div>
+
+  <script src="script.js"> 
+  </script>
+</body>
+</html>
