@@ -1,4 +1,4 @@
-![Particle Simulation](canvasphoto.png)
+![Particle Simulation](photocanvas.png)
 
 AI carried me.
 A friend inspired me.
