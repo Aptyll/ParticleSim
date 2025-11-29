@@ -1,6 +1,6 @@
 # Particle Simulation
 
-![Particle Simulation](canvasphoto.png)
+![Particle Simulation](photocanvas.png)
 
 ## About This Project
 
