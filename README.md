@@ -4,7 +4,7 @@
 
 ## About This Project
 
-This is my **First ever Coding Project!**
+This is my **First Ever Coding Project!**
 
 ### My Dev Journey
 
